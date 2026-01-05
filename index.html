@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendrier de garde alternée</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+  <h2>Accès sécurisé</h2>
+  <input type="password" id="password" placeholder="Mot de passe">
+  <button onclick="checkPassword()">Entrer</button>
+</div>
+
+<div id="app" class="hidden">
+  <header>
+    <h1>Calendrier de garde alternée</h1>
+    <button onclick="window.print()">🖨️ Imprimer</button>
+  </header>
+
+  <div id="calendar"></div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
